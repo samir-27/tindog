@@ -4,7 +4,7 @@ body{font-family:  'Montserrat', sans-serif;;
     
 }
 .container-fluid{
-    padding: 2% 15%;
+    padding: 2% 15% 10%;
 }
 #title{
     background-color: #ff4c68;
@@ -47,16 +47,23 @@ h2{
 
 /* image */
 
-.img{
-    margin-left:80px ;
+.img-home{
+   
     transform: rotate(25deg);
-    width: 60%;
+    width: 20%;
+    position:absolute;
+    right:25%;
+    
 }
 
 #features{
-    margin: 80px;
+  
+   padding: 7% 15%;
+  background-color: #fff;
+  position:relative;
+    
+ 
 }
-
 #features h3{
     font-size: 16px;
     padding: 10px 0 5px 0;
@@ -74,7 +81,9 @@ h2{
     background:#ff4c68;
     color: #fff;
 }
-
+.carousel-item {
+        padding: 7% 15%;
+}
 .test-img{
     width: 10%;
     border-radius: 100%;
@@ -89,4 +98,43 @@ h2{
 .press-logo{
     width: 15%;
     margin: 20px 20px 20px 15px;
+}
+
+/* pricing */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.p-cols{
+    padding: 3% 2%;
+}
+
+@media (max-width: 995px) {
+    .img-home{
+       
+        position: static;
+        transform: rotate(0);
+        width: 40%;
+    }
+    #title{
+        text-align: center;
+    }
+}
+@media (max-width: 650px) {
+    #testimonials{
+       font-size: 16px;
+    }
+    .carousel-item h2{
+        font-size: 20px;
+      
+    }
+}
+#cta{
+    
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+        background: #ff4c68;
 }
